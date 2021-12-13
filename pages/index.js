@@ -216,9 +216,9 @@ export default function Home({ data }) {
                 </h1>
 
                 <div className={styles.schedule}>
-                    {schedule.map(s => {
+                    {schedule.map((s, idx) => {
                         return (
-                            <div className={styles.scheduleSection}>
+                            <div className={styles.scheduleSection} key={idx}>
                                 <div className={styles.scheduleTime}>
                                     {format(s.startDate, 'HH:mm')} — {format(s.endDate, 'HH:mm')}
                                 </div>
