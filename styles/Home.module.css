@@ -46,7 +46,7 @@
 
 .scheduleSection {
   display: flex;
-  gap: 30px;
+  gap: 4px;
 }
 
 .scheduleSection + .scheduleSection {
